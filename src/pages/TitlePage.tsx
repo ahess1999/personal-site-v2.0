@@ -11,14 +11,14 @@ const TitlePage: React.FC = () => {
       <Container minW="60vw">
         <Text color="white">Hello! I'm</Text>
         <Text
-          fontSize={smallScreen || mediumScreen ? "7xl" : "8xl"}
+          fontSize={smallScreen || mediumScreen ? "6xl" : "8xl"}
           fontWeight="bold"
           color={PRIMARY}
         >
           Austin Hess
         </Text>
         <Text
-          fontSize={smallScreen || mediumScreen ? "7xl" : "8xl"}
+          fontSize={smallScreen || mediumScreen ? "6xl" : "8xl"}
           fontWeight="bold"
           color={SECONDARY}
         >

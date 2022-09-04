@@ -1,10 +1,13 @@
 import React from "react";
 import { HStack, Center, Icon } from "@chakra-ui/react";
 import { GrGithub, GrLinkedin } from "react-icons/gr";
+import useScreenWatch from "../../hooks/useScreenWatch";
 
 const SideNavFooter: React.FC = () => {
+  const { smallScreen } = useScreenWatch();
+
   return (
-    <Center mt="150px">
+    <Center mt={smallScreen ? "50px" : "150px"}>
       <HStack>
         <Icon
           w={6}
