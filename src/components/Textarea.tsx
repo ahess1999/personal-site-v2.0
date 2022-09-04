@@ -22,6 +22,7 @@ const Textarea: React.FC<InputProps> = ({
       size="lg"
       h="190px"
       resize="none"
+      color="white"
       _placeholder={{ opacity: 1, color: PRIMARY }}
       focusBorderColor={PRIMARY}
       borderColor={SECONDARY}
