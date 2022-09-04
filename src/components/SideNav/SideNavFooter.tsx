@@ -7,7 +7,7 @@ const SideNavFooter: React.FC = () => {
   const { smallScreen } = useScreenWatch();
 
   return (
-    <Center mt={smallScreen ? "50px" : "150px"}>
+    <Center mt={smallScreen ? "35px" : "150px"}>
       <HStack>
         <Icon
           w={6}
