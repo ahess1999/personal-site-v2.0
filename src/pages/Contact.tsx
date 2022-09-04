@@ -96,7 +96,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <Center bg="#1f2833" h={smallScreen ? "auto" : "100vh"}>
+    <Center bg="#1f2833" h="100vh" pb={smallScreen ? "30px" : "0"}>
       <Container minW="50vw">
         <Heading mb="32px" color={PRIMARY}>
           Contact Me

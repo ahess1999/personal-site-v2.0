@@ -14,12 +14,15 @@ import { BACKGROUND, PRIMARY } from "../utils/constants/Theme";
 import aboutPicture from "../assets/aboutpicture.JPG";
 
 const About = () => {
-  const { smallScreen, aboutScreenChange } = useScreenWatch();
+  const { smallScreen, mediumScreen, aboutScreenChange } = useScreenWatch();
   return (
     <React.Fragment>
       <Center bg={BACKGROUND} h={smallScreen ? "auto" : "100vh"} pb="24px">
         {aboutScreenChange ? (
-          <Container minW="70vw" mt={smallScreen ? "80px" : "0"}>
+          <Container
+            minW="70vw"
+            mt={smallScreen || mediumScreen ? "80px" : "0"}
+          >
             <VStack>
               <Heading color={PRIMARY} w="65vw">
                 Who am I?
