@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
         <Heading mb="20px" color={PRIMARY}>
           Projects
         </Heading>
-        <Text mb="32px">
+        <Text mb="32px" color="white">
           Here is a list of the projects that I've worked on, along with links
           that will take you to the projects and if possible, a link to the repo
           where the source code is located!

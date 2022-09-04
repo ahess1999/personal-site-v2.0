@@ -99,7 +99,7 @@ const Contact: React.FC = () => {
         <Heading mb="32px" color={PRIMARY}>
           Contact Me
         </Heading>
-        <Text mb="32px">
+        <Text mb="32px" color="white">
           I'm interested in everything computer science, especially web
           development. So if you have any questions are are interested int
           contacting me about an opportunity, my inbox is always open!

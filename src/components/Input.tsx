@@ -20,6 +20,7 @@ const Input: React.FC<InputProps> = ({
       mb={mb}
       placeholder={placeHolder}
       size="lg"
+      color="white"
       _placeholder={{ opacity: 1, color: PRIMARY }}
       focusBorderColor={PRIMARY}
       borderColor={SECONDARY}

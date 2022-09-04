@@ -30,13 +30,14 @@ const Card: React.FC<Project> = ({
         <Heading fontSize="xl" color={SECONDARY}>
           {name}
         </Heading>
-        <Text>{description}</Text>
+        <Text color="white">{description}</Text>
         <Flex direction="column" justifyContent="flex-end" h="100%">
           <HStack h="auto" mb="8px" maxWidth="230px">
             {html_url !== "" ? (
               <Icon
                 w={6}
                 h={6}
+                color="white"
                 _hover={{ color: "#66fcf1", cursor: "pointer" }}
                 as={GrGithub}
                 onClick={() => window.open("https://github.com/ahess1999")}
@@ -46,6 +47,7 @@ const Card: React.FC<Project> = ({
               <Icon
                 w={6}
                 h={6}
+                color="white"
                 _hover={{ color: "#66fcf1", cursor: "pointer" }}
                 as={FiExternalLink}
                 onClick={() => window.open("https://github.com/ahess1999")}

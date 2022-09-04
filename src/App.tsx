@@ -42,7 +42,7 @@ export const App: React.FC = () => {
             smallScreen={smallScreen || mediumScreen}
           />
           <Particle smallScreen={smallScreen || mediumScreen}>
-            {smallScreen ? (
+            {smallScreen || mediumScreen ? (
               <NavigationIcon handleIconClick={handleIconClick} />
             ) : null}
             <Routes>

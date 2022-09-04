@@ -11,6 +11,7 @@ import {
 import { StyledContainer } from "../components/StyledComponents";
 import useScreenWatch from "../hooks/useScreenWatch";
 import { BACKGROUND, PRIMARY } from "../utils/constants/Theme";
+import aboutPicture from "../assets/aboutpicture.JPG";
 
 const About = () => {
   const { aboutScreenChange } = useScreenWatch();
@@ -25,28 +26,29 @@ const About = () => {
                 Who am I?
               </Heading>
               <StyledContainer styling={{ marginRight: "5vw" }}>
-                <Text fontSize="xl" w="65vw" mb="8" textAlign="left">
+                <Text
+                  fontSize="xl"
+                  w="65vw"
+                  mb="8"
+                  textAlign="left"
+                  color="white"
+                >
                   I am a Software Developer who currently resides in Oklahoma
                   working for Paycom. I enjoy creating software of all kinds and
                   bringing to life something enjoyable and functional for
                   people!
                 </Text>
-                <Text fontSize="xl" w="65vw" mt="8" mb="8">
+                <Text fontSize="xl" w="65vw" mt="8" mb="8" color="white">
                   Hard-working indvidual, highly responsible, individual worker.
                   Loves to watch the NBA and loves to do anything outside!
                   Married to the most amazing wife!
                 </Text>
-                <Text fontSize="xl" w="65vw" mt="8">
+                <Text fontSize="xl" w="65vw" mt="8" color="white">
                   I'm interested in all things on the web and mobile! I mainly
                   work with React, C#, and PHP, but I enjoy learning new things!
                 </Text>
               </StyledContainer>
-              <Image
-                zIndex={100}
-                h="400px"
-                w="600px"
-                src="/static/images/aboutpicture.jpg"
-              />
+              <Image zIndex={100} h="400px" w="600px" src={aboutPicture} />
             </VStack>
           </Container>
         ) : (
@@ -54,28 +56,23 @@ const About = () => {
             <Heading color={PRIMARY}>Who am I?</Heading>
             <HStack>
               <StyledContainer styling={{ marginRight: "5vw" }}>
-                <Text fontSize="xl" w="30vw" mb="8">
+                <Text fontSize="xl" w="30vw" mb="8" color="white">
                   I am a Software Developer who currently resides in Oklahoma
                   working for Paycom. I enjoy creating software of all kinds and
                   bringing to life something enjoyable and functional for
                   people!
                 </Text>
-                <Text fontSize="xl" w="30vw" mt="8" mb="8">
+                <Text fontSize="xl" w="30vw" mt="8" mb="8" color="white">
                   Hard-working indvidual, highly responsible, individual worker.
                   Loves to watch the NBA and loves to do anything outside!
                   Married to the most amazing wife!
                 </Text>
-                <Text fontSize="xl" w="30vw" mt="8">
+                <Text fontSize="xl" w="30vw" mt="8" color="white">
                   I'm interested in all things on the web and mobile! I mainly
                   work with React, C#, and PHP, but I enjoy learning new things!
                 </Text>
               </StyledContainer>
-              <Image
-                zIndex={100}
-                h="400px"
-                w="600px"
-                src="/static/images/aboutpicture.jpg"
-              />
+              <Image zIndex={100} h="400px" w="600px" src={aboutPicture} />
             </HStack>
           </Container>
         )}

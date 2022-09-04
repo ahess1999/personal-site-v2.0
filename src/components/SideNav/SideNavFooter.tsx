@@ -10,6 +10,7 @@ const SideNavFooter: React.FC = () => {
           w={6}
           h={6}
           mr={8}
+          color="white"
           _hover={{ color: "#66fcf1", cursor: "pointer" }}
           as={GrGithub}
           onClick={() => window.open("https://github.com/ahess1999")}
@@ -18,6 +19,7 @@ const SideNavFooter: React.FC = () => {
           w={6}
           h={6}
           ml={8}
+          color="white"
           _hover={{ color: "#66fcf1", cursor: "pointer" }}
           as={GrLinkedin}
           onClick={() =>
