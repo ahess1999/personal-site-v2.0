@@ -40,7 +40,7 @@ const Card: React.FC<Project> = ({
                 color="white"
                 _hover={{ color: "#66fcf1", cursor: "pointer" }}
                 as={GrGithub}
-                onClick={() => window.open("https://github.com/ahess1999")}
+                onClick={() => window.open(html_url)}
               />
             ) : null}
             {homepage !== "" ? (
@@ -50,7 +50,7 @@ const Card: React.FC<Project> = ({
                 color="white"
                 _hover={{ color: "#66fcf1", cursor: "pointer" }}
                 as={FiExternalLink}
-                onClick={() => window.open("https://github.com/ahess1999")}
+                onClick={() => window.open(homepage)}
               />
             ) : null}
           </HStack>
