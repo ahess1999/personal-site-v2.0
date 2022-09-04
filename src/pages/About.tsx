@@ -15,6 +15,7 @@ import aboutPicture from "../assets/aboutpicture.JPG";
 
 const About = () => {
   const { smallScreen, mediumScreen, aboutScreenChange } = useScreenWatch();
+
   return (
     <React.Fragment>
       <Center bg={BACKGROUND} h={smallScreen ? "auto" : "100vh"} pb="24px">

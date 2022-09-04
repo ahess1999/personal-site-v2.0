@@ -4,7 +4,7 @@ import { GrGithub, GrLinkedin } from "react-icons/gr";
 
 const SideNavFooter: React.FC = () => {
   return (
-    <Center mt="200px">
+    <Center mt="150px">
       <HStack>
         <Icon
           w={6}

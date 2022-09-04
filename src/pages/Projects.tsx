@@ -10,14 +10,20 @@ import {
 import { PRIMARY, SECONDARY } from "../utils/constants/Theme";
 import Card from "../components/Card";
 import useFetchProjects from "../hooks/useFetchProjects";
+import useScreenWatch from "../hooks/useScreenWatch";
 
 const Projects: React.FC = () => {
   const { projects, isLoading } = useFetchProjects();
+  const { smallScreen, mediumScreen } = useScreenWatch();
 
   return (
-    <Center bg="#1f2833" h="100vh">
-      <Container minW="50vw">
-        <Heading mb="20px" color={PRIMARY}>
+    <Center bg="#1f2833" h={smallScreen && !isLoading ? "auto" : "100vh"}>
+      <Container minW="50vw" margin="0">
+        <Heading
+          mb="20px"
+          color={PRIMARY}
+          mt={smallScreen || mediumScreen ? "80px" : "0"}
+        >
           Projects
         </Heading>
         <Text mb="32px" color="white">
@@ -32,7 +38,7 @@ const Projects: React.FC = () => {
         ) : (
           <SimpleGrid
             columns={{ sm: 1, md: 1, lg: 1, xl: 2 }}
-            spacing={8}
+            spacing={6}
             h="820px"
             overflow="auto"
           >
