@@ -7,7 +7,7 @@ const TitlePage: React.FC = () => {
   const { smallScreen } = useScreenWatch();
 
   return (
-    <Center bg={BACKGROUND} h={smallScreen ? "auto" : "100vh"}>
+    <Center bg={BACKGROUND} h="100vh">
       <Container minW="60vw">
         <Text color="white">Hello! I'm</Text>
         <Text

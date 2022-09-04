@@ -17,7 +17,7 @@ const About = () => {
   const { smallScreen, aboutScreenChange } = useScreenWatch();
   return (
     <React.Fragment>
-      <Center bg={BACKGROUND} h={smallScreen ? "auto" : "100vh"}>
+      <Center bg={BACKGROUND} h={smallScreen ? "auto" : "100vh"} pb="24px">
         {aboutScreenChange ? (
           <Container minW="70vw" mt={smallScreen ? "80px" : "0"}>
             <VStack>
@@ -76,12 +76,7 @@ const About = () => {
                   work with React, C#, and PHP, but I enjoy learning new things!
                 </Text>
               </StyledContainer>
-              <Image
-                zIndex={100}
-                h="400px"
-                w={smallScreen ? "90vw" : "600px"}
-                src={aboutPicture}
-              />
+              <Image zIndex={100} h="400px" w="550px" src={aboutPicture} />
             </HStack>
           </Container>
         )}
