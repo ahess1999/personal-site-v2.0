@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
           <SimpleGrid
             columns={{ sm: 1, md: 1, lg: 1, xl: 2 }}
             spacing={6}
-            h="800px"
+            h="675px"
             overflow="auto"
           >
             {projects.map((value, key) => {
