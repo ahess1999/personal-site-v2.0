@@ -32,7 +32,7 @@ const SideNavHeader: React.FC<SideNavHeaderProps> = ({
         <Text fontSize="3xl" fontWeight="bold" color="#66fcf1">
           Austin
         </Text>
-        <Text>Software Developer</Text>
+        <Text color="white">Software Developer</Text>
       </VStack>
     </Center>
   );

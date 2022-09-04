@@ -20,7 +20,7 @@ const SideNav: React.FC<SideNavProps> = ({
   let styling = isSideNavOpen
     ? {
         position: "absolute",
-        width: "250px",
+        width: "225px",
         height: "100vh",
         backgroundColor: "#2a2e35",
         zIndex: "2",
@@ -29,7 +29,7 @@ const SideNav: React.FC<SideNavProps> = ({
       }
     : {
         float: "left",
-        width: "250px",
+        width: "225px",
         height: "100vh",
         backgroundColor: "#2a2e35",
         zIndex: "2",

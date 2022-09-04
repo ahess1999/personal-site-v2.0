@@ -16,8 +16,10 @@ import Textarea from "../components/Textarea";
 import { EmailError } from "../types/Errors";
 import { validateEmail } from "../services/contact/validateEmail";
 import { sendEmail } from "../services/contact/sendEmail";
+import useScreenWatch from "../hooks/useScreenWatch";
 
 const Contact: React.FC = () => {
+  const { smallScreen } = useScreenWatch();
   const toast = useToast();
   const [email, setEmail] = useState<Email>({
     name: "",
@@ -94,7 +96,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <Center bg="#1f2833" h="100vh">
+    <Center bg="#1f2833" h={smallScreen ? "auto" : "100vh"}>
       <Container minW="50vw">
         <Heading mb="32px" color={PRIMARY}>
           Contact Me

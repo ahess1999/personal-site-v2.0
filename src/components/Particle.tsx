@@ -14,7 +14,7 @@ const Particle: React.FC<ParticleProps> = ({ children, smallScreen }) => {
         zIndex: "1",
         position: smallScreen ? "absolute" : "relative",
         float: "right",
-        width: smallScreen ? "100vw" : "calc(100vw - 250px)",
+        width: smallScreen ? "100vw" : "calc(100vw - 225px)",
       }}
     >
       <Particles

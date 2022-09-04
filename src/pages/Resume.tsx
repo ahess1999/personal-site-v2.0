@@ -17,7 +17,7 @@ const Resume: React.FC = () => {
   };
 
   return (
-    <Center bg="#1f2833" h="100vh">
+    <Center bg="#1f2833" h={smallScreen ? "auto" : "100vh"}>
       <Document file="/AustinHessResume.pdf">
         <Page pageNumber={1} width={getResumeWidth()} />
       </Document>
