@@ -19,7 +19,7 @@ const SideNav: React.FC<SideNavProps> = ({
 }) => {
   let styling = isSideNavOpen
     ? {
-        position: "absolute",
+        position: "fixed",
         width: "225px",
         height: "100vh",
         backgroundColor: "#2a2e35",

@@ -17,12 +17,16 @@ const Projects: React.FC = () => {
   const { smallScreen, mediumScreen } = useScreenWatch();
 
   return (
-    <Center bg="#1f2833" h={smallScreen && !isLoading ? "auto" : "100vh"}>
+    <Center
+      bg="#1f2833"
+      h={smallScreen && !isLoading ? "auto" : "100vh"}
+      pb="24px"
+    >
       <Container minW="50vw" margin="0">
         <Heading
           mb="20px"
           color={PRIMARY}
-          mt={smallScreen || mediumScreen ? "80px" : "0"}
+          mt={smallScreen || mediumScreen ? "50px" : "0"}
         >
           Projects
         </Heading>
@@ -39,7 +43,7 @@ const Projects: React.FC = () => {
           <SimpleGrid
             columns={{ sm: 1, md: 1, lg: 1, xl: 2 }}
             spacing={6}
-            h="700px"
+            h="800px"
             overflow="auto"
           >
             {projects.map((value, key) => {
