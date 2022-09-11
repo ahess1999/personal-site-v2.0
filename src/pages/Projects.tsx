@@ -26,7 +26,7 @@ const Projects: React.FC = () => {
         <Heading
           mb="20px"
           color={PRIMARY}
-          mt={smallScreen || mediumScreen ? "50px" : "0"}
+          mt={smallScreen || mediumScreen ? "50px" : "10px"}
         >
           Projects
         </Heading>
