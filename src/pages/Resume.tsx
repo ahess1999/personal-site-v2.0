@@ -13,7 +13,7 @@ const Resume: React.FC = () => {
       }
       return 450;
     }
-    return 700;
+    return 650;
   };
 
   return (
