@@ -11,7 +11,7 @@ const Resume: React.FC = () => {
       if (smallScreen) {
         return 350;
       }
-      return 500;
+      return 450;
     }
     return 700;
   };
