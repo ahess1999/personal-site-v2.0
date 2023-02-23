@@ -7,7 +7,7 @@ const useFetchProjects = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   const fetchProjects = async () => {
-    await axios.get(process.env.REACT_APP_API_URL + "").then((res) => {
+    await axios.get(process.env.REACT_APP_API_URL + "projects").then((res) => {
       setProjects(res.data);
       setIsLoading(false);
     });
