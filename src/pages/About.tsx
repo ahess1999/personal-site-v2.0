@@ -8,7 +8,6 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import React from "react";
-import aboutPicture from "../assets/aboutpicture.jpg";
 import { StyledContainer } from "../components/StyledComponents";
 import useScreenWatch from "../hooks/useScreenWatch";
 import { BACKGROUND, PRIMARY } from "../utils/constants/Theme";
@@ -56,7 +55,7 @@ const About = () => {
                 zIndex={100}
                 h="300px"
                 w="300px"
-                src={aboutPicture}
+                src="/static/images/aboutpicture.JPG"
               />
             </VStack>
           </Container>
@@ -81,7 +80,12 @@ const About = () => {
                   work with React, C#, and PHP, but I enjoy learning new things!
                 </Text>
               </StyledContainer>
-              <Image zIndex={100} h="600px" w="550px" src={aboutPicture} />
+              <Image
+                zIndex={100}
+                h="600px"
+                w="550px"
+                src="/static/images/aboutpicture.JPG"
+              />
             </HStack>
           </Container>
         )}
