@@ -1,7 +1,7 @@
 export default interface Project {
   name: string;
   description: string;
-  html_url?: string;
+  htmlUrl?: string;
   homepage?: string;
   languages: Languages;
 }

@@ -23,16 +23,17 @@ const SideNav: React.FC<SideNavProps> = ({
         width: "225px",
         height: "100vh",
         backgroundColor: "#2a2e35",
-        zIndex: "2",
+        zIndex: "100",
         transform: `translateX(${translateX}%)`,
         transition: "ease 300ms",
       }
     : {
+        position: "fixed",
         float: "left",
         width: "225px",
         height: "100vh",
         backgroundColor: "#2a2e35",
-        zIndex: "2",
+        zIndex: "100",
         transform: `translateX(${translateX}%)`,
         transition: "ease 300ms",
       };

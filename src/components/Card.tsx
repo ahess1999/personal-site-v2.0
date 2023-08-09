@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Badge,
   Box,
@@ -9,17 +8,18 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import Project from "../types/Project";
-import { GrGithub } from "react-icons/gr";
+import React from "react";
 import { FiExternalLink } from "react-icons/fi";
-import { SECONDARY } from "../utils/constants/Theme";
+import { GrGithub } from "react-icons/gr";
 import useGetProjectLanguages from "../hooks/useGetProjectLanguages";
+import Project from "../types/Project";
+import { SECONDARY } from "../utils/constants/Theme";
 
 const Card: React.FC<Project> = ({
   name,
   description,
   languages,
-  html_url,
+  htmlUrl,
   homepage,
 }) => {
   const { projectLanguges } = useGetProjectLanguages(languages);
@@ -33,16 +33,6 @@ const Card: React.FC<Project> = ({
         <Text color="white">{description}</Text>
         <Flex direction="column" justifyContent="flex-end" h="100%">
           <HStack h="auto" mb="8px" maxWidth="230px">
-            {html_url !== "" ? (
-              <Icon
-                w={6}
-                h={6}
-                color="white"
-                _hover={{ color: "#66fcf1", cursor: "pointer" }}
-                as={GrGithub}
-                onClick={() => window.open(html_url)}
-              />
-            ) : null}
             {homepage !== "" ? (
               <Icon
                 w={6}
@@ -51,6 +41,16 @@ const Card: React.FC<Project> = ({
                 _hover={{ color: "#66fcf1", cursor: "pointer" }}
                 as={FiExternalLink}
                 onClick={() => window.open(homepage)}
+              />
+            ) : null}
+            {htmlUrl !== "" ? (
+              <Icon
+                w={6}
+                h={6}
+                color="white"
+                _hover={{ color: "#66fcf1", cursor: "pointer" }}
+                as={GrGithub}
+                onClick={() => window.open(htmlUrl)}
               />
             ) : null}
           </HStack>

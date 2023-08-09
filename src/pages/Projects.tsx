@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Center,
   Container,
@@ -7,21 +6,18 @@ import {
   Spinner,
   Text,
 } from "@chakra-ui/react";
-import { PRIMARY, SECONDARY } from "../utils/constants/Theme";
+import React from "react";
 import Card from "../components/Card";
 import useFetchProjects from "../hooks/useFetchProjects";
 import useScreenWatch from "../hooks/useScreenWatch";
+import { PRIMARY, SECONDARY } from "../utils/constants/Theme";
 
 const Projects: React.FC = () => {
   const { projects, isLoading } = useFetchProjects();
   const { smallScreen, mediumScreen } = useScreenWatch();
 
   return (
-    <Center
-      bg="#1f2833"
-      h={smallScreen && !isLoading ? "auto" : "100vh"}
-      pb="24px"
-    >
+    <Center bg="#1f2833" pb="24px" pt="48px" h={isLoading ? "100vh" : "auto"}>
       <Container minW="50vw" margin="0">
         <Heading
           mb="20px"
@@ -40,12 +36,7 @@ const Projects: React.FC = () => {
             <Spinner color={SECONDARY} />
           </Center>
         ) : (
-          <SimpleGrid
-            columns={{ sm: 1, md: 1, lg: 1, xl: 2 }}
-            spacing={6}
-            h={smallScreen ? "699px" : "675px"}
-            overflow="auto"
-          >
+          <SimpleGrid columns={{ sm: 1, md: 1, lg: 1, xl: 2 }} spacing={6}>
             {projects.map((value, key) => {
               return <Card key={key} {...value} />;
             })}

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Center,
   Container,
@@ -8,10 +7,11 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
+import React from "react";
+import aboutPicture from "../assets/aboutpicture.jpg";
 import { StyledContainer } from "../components/StyledComponents";
 import useScreenWatch from "../hooks/useScreenWatch";
 import { BACKGROUND, PRIMARY } from "../utils/constants/Theme";
-import aboutPicture from "../assets/aboutpicture.JPG";
 
 const About = () => {
   const { smallScreen, mediumScreen, aboutScreenChange } = useScreenWatch();
@@ -52,9 +52,10 @@ const About = () => {
                 </Text>
               </StyledContainer>
               <Image
+                pt="24px"
                 zIndex={100}
-                h="400px"
-                w={smallScreen ? "90vw" : "600px"}
+                h="300px"
+                w="300px"
                 src={aboutPicture}
               />
             </VStack>
@@ -80,7 +81,7 @@ const About = () => {
                   work with React, C#, and PHP, but I enjoy learning new things!
                 </Text>
               </StyledContainer>
-              <Image zIndex={100} h="400px" w="550px" src={aboutPicture} />
+              <Image zIndex={100} h="600px" w="550px" src={aboutPicture} />
             </HStack>
           </Container>
         )}

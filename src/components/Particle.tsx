@@ -19,7 +19,7 @@ const Particle: React.FC<ParticleProps> = ({ children, smallScreen }) => {
     >
       <Particles
         style={{
-          position: "absolute",
+          position: "fixed",
           top: 0,
           left: 0,
           bottom: 0,
@@ -27,6 +27,7 @@ const Particle: React.FC<ParticleProps> = ({ children, smallScreen }) => {
           padding: 0,
           margin: 0,
           zIndex: 0,
+          width: smallScreen ? "100%" : "calc(100% - 225px)",
         }}
         params={{
           fullScreen: false,
