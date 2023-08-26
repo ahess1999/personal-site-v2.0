@@ -1,7 +1,7 @@
-import React from "react";
 import { Center, Container, Text } from "@chakra-ui/react";
-import { BACKGROUND, PRIMARY, SECONDARY } from "../utils/constants/Theme";
+import React from "react";
 import useScreenWatch from "../hooks/useScreenWatch";
+import { BACKGROUND, PRIMARY, SECONDARY } from "../utils/constants/Theme";
 
 const TitlePage: React.FC = () => {
   const { smallScreen, mediumScreen } = useScreenWatch();
@@ -25,8 +25,8 @@ const TitlePage: React.FC = () => {
           Software Developer
         </Text>
         <Text w={smallScreen || mediumScreen ? "70vw" : "500px"} color="white">
-          Software developer who currently resides in Oklahoma City, OK and is
-          currently working as a Software Developer for Paycom
+          Software Developer who currently resides in Oklahoma City, OK and is
+          currently working for Paycom
         </Text>
       </Container>
     </Center>
