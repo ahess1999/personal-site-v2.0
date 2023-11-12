@@ -7,7 +7,6 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import React from "react";
 import { StyledContainer } from "../components/StyledComponents";
 import useScreenWatch from "../hooks/useScreenWatch";
 import { BACKGROUND, PRIMARY } from "../utils/constants/Theme";
@@ -16,7 +15,7 @@ const About = () => {
   const { smallScreen, mediumScreen, aboutScreenChange } = useScreenWatch();
 
   return (
-    <React.Fragment>
+    <>
       <Center bg={BACKGROUND} h={smallScreen ? "auto" : "100vh"} pb="24px">
         {aboutScreenChange ? (
           <Container
@@ -42,7 +41,7 @@ const About = () => {
                 </Text>
                 <Text fontSize="xl" w="65vw" mt="8" mb="8" color="white">
                   Hard-working indvidual, highly responsible, individual worker.
-                  Loves to watch the NBA and loves to do anything outside!
+                  Loves to watch the NBA doing anything outside!
                   Married to the most amazing wife!
                 </Text>
                 <Text fontSize="xl" w="65vw" mt="8" color="white">
@@ -72,7 +71,7 @@ const About = () => {
                 </Text>
                 <Text fontSize="lg" w="30vw" mt="8" mb="8" color="white">
                   Hard-working indvidual, highly responsible, individual worker.
-                  Loves to watch the NBA and loves to do anything outside!
+                  Loves to watch the NBA and doing anything outside!
                   Married to the most amazing wife!
                 </Text>
                 <Text fontSize="lg" w="30vw" mt="8" color="white">
@@ -90,7 +89,7 @@ const About = () => {
           </Container>
         )}
       </Center>
-    </React.Fragment>
+    </>
   );
 };
 
