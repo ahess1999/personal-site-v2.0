@@ -1,5 +1,5 @@
-import React from "react";
 import { Center } from "@chakra-ui/react";
+import React from "react";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import useScreenWatch from "../hooks/useScreenWatch";
 
@@ -11,9 +11,9 @@ const Resume: React.FC = () => {
       if (smallScreen) {
         return 350;
       }
-      return 450;
+      return 500;
     }
-    return 575;
+    return 625;
   };
 
   return (

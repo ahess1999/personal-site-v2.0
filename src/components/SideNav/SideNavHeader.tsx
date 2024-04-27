@@ -1,5 +1,5 @@
-import React from "react";
 import { Avatar, Center, Icon, Text, VStack } from "@chakra-ui/react";
+import React from "react";
 import { BsChevronLeft } from "react-icons/bs";
 import { PRIMARY, SECONDARY } from "../../utils/constants/Theme";
 
@@ -32,7 +32,9 @@ const SideNavHeader: React.FC<SideNavHeaderProps> = ({
         <Text fontSize="3xl" fontWeight="bold" color="#66fcf1">
           Austin
         </Text>
-        <Text color="white">Software Developer</Text>
+        <Text textAlign="center" color="white">
+          Team Leader of Software Development
+        </Text>
       </VStack>
     </Center>
   );
