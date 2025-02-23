@@ -25,8 +25,8 @@ const TitlePage: React.FC = () => {
           Software Developer
         </Text>
         <Text w={smallScreen || mediumScreen ? "70vw" : "500px"} color="white">
-          Software Developer who currently resides in Oklahoma City, OK and is
-          currently working for Paycom
+          Team Leader of Software Development who currently resides in Oklahoma City and is
+          working for Paycom
         </Text>
       </Container>
     </Center>
