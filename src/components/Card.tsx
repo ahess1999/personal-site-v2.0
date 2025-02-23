@@ -33,7 +33,7 @@ const Card: React.FC<Project> = ({
         <Text color="white">{description}</Text>
         <Flex direction="column" justifyContent="flex-end" h="100%">
           <HStack h="auto" mb="8px" maxWidth="230px">
-            {homepage !== "" ? (
+            {homepage && homepage !== "" ? (
               <Icon
                 w={6}
                 h={6}
@@ -43,7 +43,7 @@ const Card: React.FC<Project> = ({
                 onClick={() => window.open(homepage)}
               />
             ) : null}
-            {htmlUrl !== "" ? (
+            {htmlUrl && htmlUrl !== "" ? (
               <Icon
                 w={6}
                 h={6}
